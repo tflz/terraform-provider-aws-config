@@ -37,7 +37,7 @@ type AWSLandingZoneConfigProviderModel struct {
 }
 
 func (p *AWSLandingZoneConfigProvider) Metadata(ctx context.Context, req provider.MetadataRequest, resp *provider.MetadataResponse) {
-	resp.TypeName = "scaffolding"
+	resp.TypeName = "aws-landing-zone-config"
 	resp.Version = p.version
 }
 
