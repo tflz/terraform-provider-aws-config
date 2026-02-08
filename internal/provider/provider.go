@@ -77,9 +77,7 @@ func (p *AWSLandingZoneConfigProvider) Resources(ctx context.Context) []func() r
 }
 
 func (p *AWSLandingZoneConfigProvider) EphemeralResources(ctx context.Context) []func() ephemeral.EphemeralResource {
-	return []func() ephemeral.EphemeralResource{
-		NewExampleEphemeralResource,
-	}
+	return []func() ephemeral.EphemeralResource{}
 }
 
 func (p *AWSLandingZoneConfigProvider) DataSources(ctx context.Context) []func() datasource.DataSource {
