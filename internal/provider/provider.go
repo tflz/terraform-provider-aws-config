@@ -85,9 +85,7 @@ func (p *AWSLandingZoneConfigProvider) DataSources(ctx context.Context) []func()
 }
 
 func (p *AWSLandingZoneConfigProvider) Functions(ctx context.Context) []func() function.Function {
-	return []func() function.Function{
-		NewExampleFunction,
-	}
+	return []func() function.Function{}
 }
 
 func (p *AWSLandingZoneConfigProvider) Actions(ctx context.Context) []func() action.Action {
