@@ -1,1 +1,1 @@
-terraform import scaffolding_example.test "id-123"
+terraform import aws-landing-zone-config_example.test "id-123"

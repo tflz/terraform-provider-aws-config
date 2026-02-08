@@ -1,3 +1,3 @@
-data "scaffolding_example" "example" {
+data "aws-landing-zone-config_example" "example" {
   configurable_attribute = "some-value"
 }
