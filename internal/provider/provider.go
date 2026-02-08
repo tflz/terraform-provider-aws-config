@@ -95,9 +95,7 @@ func (p *AWSLandingZoneConfigProvider) Functions(ctx context.Context) []func() f
 }
 
 func (p *AWSLandingZoneConfigProvider) Actions(ctx context.Context) []func() action.Action {
-	return []func() action.Action{
-		NewExampleAction,
-	}
+	return []func() action.Action{}
 }
 
 func New(version string) func() provider.Provider {
