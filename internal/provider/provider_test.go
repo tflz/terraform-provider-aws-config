@@ -3,13 +3,7 @@
 
 package provider
 
-import (
-	"testing"
-
-	"github.com/hashicorp/terraform-plugin-framework/providerserver"
-	"github.com/hashicorp/terraform-plugin-go/tfprotov6"
-	"github.com/hashicorp/terraform-plugin-testing/echoprovider"
-)
+/*
 
 // testAccProtoV6ProviderFactories is used to instantiate a provider during acceptance testing.
 // The factory function is called for each Terraform CLI command to create a provider
@@ -32,3 +26,4 @@ func testAccPreCheck(t *testing.T) {
 	// about the appropriate environment variables being set are common to see in a pre-check
 	// function.
 }
+*/
