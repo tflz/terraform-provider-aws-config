@@ -42,7 +42,7 @@ func (f *LoadOrganizationConfigFunction) Definition(ctx context.Context, req fun
 
 func (f *LoadOrganizationConfigFunction) Run(ctx context.Context, req function.RunRequest, resp *function.RunResponse) {
 	parser := hclparse.NewParser()
-	configFile, err := parser.ParseHCLFile("organization.tflz")
+	configFile, err := parser.ParseHCLFile("../config/organization.tflz")
 	if err != nil {
 		resp.Error = function.ConcatFuncErrors(resp.Error, function.NewFuncError(err.Error()))
 		return
