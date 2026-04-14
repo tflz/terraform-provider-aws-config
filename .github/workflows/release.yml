@@ -39,13 +39,3 @@ jobs:
           # GitHub sets the GITHUB_TOKEN secret automatically.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GPG_FINGERPRINT: ${{ steps.import_gpg.outputs.fingerprint }}
-      - name: Install spacectl
-        uses: spacelift-io/setup-spacectl@d0e2c81467c31a68af60db5b1f9f1f54f79cab96 # v2.0.0
-      - name: Release new version
-        env:
-          GPG_KEY_ID: ${{ steps.import_gpg.outputs.keyid }}
-          SPACELIFT_API_KEY_ENDPOINT: https://tflz.app.spacelift.io
-          SPACELIFT_API_KEY_ID: ${{ secrets.SPACELIFT_API_KEY_ID }}
-          SPACELIFT_API_KEY_SECRET: ${{ secrets.SPACELIFT_API_KEY_SECRET }}
-        run:
-          spacectl provider create-version --type=awsconfig
